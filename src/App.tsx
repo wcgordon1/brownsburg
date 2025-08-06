@@ -40,11 +40,7 @@ function App() {
           <ScrollToTop />
           <Header />
           <main className="flex-grow">
-            <Suspense fallback={
-              <div className="flex items-center justify-center min-h-[50vh]">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-              </div>
-            }>
+            <Suspense fallback={<div style={{minHeight: '50vh'}}></div>}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/services" element={<Services />} />

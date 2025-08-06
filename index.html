@@ -39,14 +39,17 @@
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/mason-400w.webp" as="image" type="image/webp" media="(max-width: 768px)">
     <link rel="preload" href="/mason-800w.webp" as="image" type="image/webp" media="(min-width: 769px) and (max-width: 1024px)">
     <link rel="preload" href="/mason.webp" as="image" type="image/webp" media="(min-width: 1025px)">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-      /* Prevent layout shift from font loading */
-      .font-loading { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+      /* Global layout stability */
+      *, *::before, *::after { box-sizing: border-box; }
+      html { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+      body { margin: 0; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+      img, video { max-width: 100%; height: auto; }
     </style>
   </head>
   <body>
