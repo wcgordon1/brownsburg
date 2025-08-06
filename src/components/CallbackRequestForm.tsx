@@ -127,10 +127,10 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
               {/* Logo and Company Name Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
-                  <Droplets className="h-8 w-8 text-blue-500" />
-                  <div className="flex flex-col">
+                <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-16 w-16 object-contain" />
+                <div className="flex flex-col">
                     <span className="text-xl font-bold text-navy-900">Brownsburg</span>
-                    <span className="text-sm text-blue-500 -mt-1">Pressure Washing</span>
+                    <span className="text-sm font-semibold text-blue-500 -mt-1">Pressure Washing</span>
                   </div>
                 </div>
                 <button
@@ -143,10 +143,10 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
               </div>
 
               <div className="mb-4">
-                <h3 className="text-lg font-medium text-navy-900">Request a Call Back</h3>
+                <h3 className="text-lg font-semibold text-navy-900">Request a Call Back</h3>
               </div>
               
-              <p className="text-sm text-gray-600 mb-6">
+              <p className="text-base text-gray-600 mb-6">
                 Leave your details below and we'll call you back at your preferred time. No need to wait on hold!
               </p>
 
@@ -182,7 +182,7 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
                     className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                       errors.phone ? 'border-red-500 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
                     }`}
-                    placeholder="(317) 555-0123"
+                    placeholder="(317) 350-4926"
                   />
                   {errors.phone && <span className="text-red-500 text-xs mt-1">{errors.phone}</span>}
                 </div>

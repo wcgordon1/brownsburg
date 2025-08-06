@@ -68,10 +68,10 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo - serves as home link */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-14 w-14 object-contain" />
+            <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-16 w-16 object-contain" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-navy-900">Brownsburg</span>
-              <span className="text-sm font-semibold text-blue-500 -mt-1">Pressure Washing</span>
+              <span className="text-base font-semibold text-blue-500 -mt-1">Pressure Washing</span>
             </div>
           </Link>
 

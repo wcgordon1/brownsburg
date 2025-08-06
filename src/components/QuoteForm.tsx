@@ -160,10 +160,10 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
               {/* Logo and Company Name Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
-                  <Droplets className="h-8 w-8 text-blue-500" />
+                    <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-16 w-16 object-contain" />
                   <div className="flex flex-col">
                     <span className="text-xl font-bold text-navy-900">Brownsburg</span>
-                    <span className="text-sm text-blue-500 -mt-1">Pressure Washing</span>
+                    <span className="text-base font-semibold text-blue-500 -mt-1">Pressure Washing</span>
                   </div>
                 </div>
                 <button
@@ -175,10 +175,10 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
               </div>
 
               <div className="mb-4">
-                <h3 className="text-lg font-medium text-navy-900">{title}</h3>
+                <h3 className="text-2xl font-semibold text-navy-900">{title}</h3>
               </div>
               
-              <p className="text-sm text-gray-600 mb-6">{description}</p>
+              <p className="text-base text-gray-600 mb-6">{description}</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
