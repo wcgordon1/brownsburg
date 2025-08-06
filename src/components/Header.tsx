@@ -36,31 +36,31 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* Mobile Contact Banner */}
-      <div className="md:hidden bg-blue-500 py-1">
+      <div className="md:hidden bg-blue-500 py-2">
         <div className="mx-auto max-w-7xl px-4 flex justify-center space-x-10">
           <a 
             href="tel:+13173504926" 
-            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            className="flex items-center space-x-2 text-white hover:text-blue-100 transition-colors"
             aria-label="Call us"
           >
             <Phone className="h-4 w-4" />
-            <span className="text-sm font-medium">Call us</span>
+            <span className="text-sm font-medium underline">Call us</span>
           </a>
           <a
             href="sms:+13173504926?body=I need a pressure wash!"
-            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            className="flex items-center space-x-2 text-white hover:text-blue-100 transition-colors"
             aria-label="Send text message"
           >
             <Smartphone className="h-4 w-4" />
-            <span className="text-sm font-medium">Text us</span>
+            <span className="text-sm font-medium underline">Text us</span>
           </a>
           <a
             href="mailto:service@brownsburgpressurewashing.com?subject=I need a pressure wash!"
-            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            className="flex items-center space-x-2 text-white hover:text-blue-100 transition-colors"
             aria-label="Email us"
           >
             <Mail className="h-4 w-4" />
-            <span className="text-sm font-medium">Email us</span>
+            <span className="text-sm font-medium underline">Email us</span>
           </a>
         </div>
       </div>
