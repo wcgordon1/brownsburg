@@ -130,16 +130,23 @@ const About = () => {
 
         {/* Owner Story */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="aspect-[4/3]">
+          <div className="relative" style={{ aspectRatio: '1352/1152' }}>
             <picture>
-              <source srcSet="/mason.webp" type="image/webp" />
+              <source 
+                srcSet="/mason-400w.webp 400w, /mason-800w.webp 800w, /mason.webp 1352w" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                type="image/webp" 
+              />
               <img
                 src="/mason.jpeg"
+                srcSet="/mason-400w.webp 400w, /mason-800w.webp 800w, /mason.webp 1352w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                 alt="Our logo and dog - Mason"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
-                width="600"
-                height="450"
+                width="1352"
+                height="1152"
                 fetchPriority="high"
+                decoding="async"
               />
             </picture>
           </div>
