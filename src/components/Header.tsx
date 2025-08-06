@@ -37,7 +37,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* Mobile Contact Banner */}
       <div className="md:hidden bg-blue-500 py-1">
-        <div className="mx-auto max-w-7xl px-4 flex justify-center space-x-6">
+        <div className="mx-auto max-w-7xl px-4 flex justify-center space-x-10">
           <a 
             href="tel:+13175550123" 
             className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
