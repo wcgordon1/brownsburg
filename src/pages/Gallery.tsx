@@ -254,7 +254,7 @@ const Gallery = () => {
                 Complete exterior cleaning that restores your home's beauty
               </p>
               <div className="flex items-center justify-center text-blue-500 group-hover:text-blue-600 transition-colors">
-                <span className="text-sm font-medium">Learn More</span>
+                <span className="text-sm font-medium">Learn More About House Washing</span>
                 <ArrowRight className="h-4 w-4 ml-1" />
               </div>
             </Link>
@@ -269,7 +269,7 @@ const Gallery = () => {
                 Remove stubborn stains and restore original appearance
               </p>
               <div className="flex items-center justify-center text-blue-500 group-hover:text-blue-600 transition-colors">
-                <span className="text-sm font-medium">Learn More</span>
+                <span className="text-sm font-medium">Learn More About Driveway Cleaning</span>
                 <ArrowRight className="h-4 w-4 ml-1" />
               </div>
             </Link>
@@ -284,7 +284,7 @@ const Gallery = () => {
                 Safe algae removal that extends your roof's lifespan
               </p>
               <div className="flex items-center justify-center text-blue-500 group-hover:text-blue-600 transition-colors">
-                <span className="text-sm font-medium">Learn More</span>
+                <span className="text-sm font-medium">Learn More About Roof Cleaning</span>
                 <ArrowRight className="h-4 w-4 ml-1" />
               </div>
             </Link>

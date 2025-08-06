@@ -188,7 +188,7 @@ const LincolnTownship = () => {
                 </h4>
                 <p className="text-sm text-gray-600 mb-3">{service.description}</p>
                 <Link to={service.link} className="text-blue-500 hover:text-blue-600 text-sm font-medium">
-                  Learn More →
+                  Learn More About {service.title} →
                 </Link>
               </div>
             ))}
@@ -251,7 +251,7 @@ const LincolnTownship = () => {
                 Northern quarter with convenient highway access via I-74, I-65, and SR-267.
               </p>
               <Link to="/brown-township" className="text-blue-500 hover:text-blue-600 text-sm font-medium">
-                Learn More →
+                Learn More About Brown Township →
               </Link>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
@@ -264,7 +264,7 @@ const LincolnTownship = () => {
                 Western fringe including the peaceful communities of Tilden and Maplewood.
               </p>
               <Link to="/middle-township" className="text-blue-500 hover:text-blue-600 text-sm font-medium">
-                Learn More →
+                Learn More About Middle Township →
               </Link>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
@@ -277,7 +277,7 @@ const LincolnTownship = () => {
                 Southern edge completing our comprehensive Brownsburg coverage.
               </p>
               <Link to="/washington-township" className="text-blue-500 hover:text-blue-600 text-sm font-medium">
-                Learn More →
+                Learn More About Washington Township →
               </Link>
             </div>
           </div>

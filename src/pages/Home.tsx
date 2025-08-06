@@ -232,7 +232,7 @@ const Home = () => {
                     to={service.link}
                     className="text-blue-500 hover:text-blue-600 font-medium flex items-center"
                   >
-                    Learn More
+                    Learn More About {service.title}
                     <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </div>

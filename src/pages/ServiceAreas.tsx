@@ -223,7 +223,7 @@ const ServiceAreas = () => {
                   </div>
                   
                   <div className="flex items-center text-blue-500 group-hover:text-blue-600 transition-colors">
-                    <span className="text-sm font-medium">Learn More</span>
+                    <span className="text-sm font-medium">Learn More About {city.name}</span>
                     <ArrowRight className="h-4 w-4 ml-1" />
                   </div>
                 </Link>
