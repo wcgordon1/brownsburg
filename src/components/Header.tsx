@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Smartphone } from 'lucide-react';
+import { Menu, X, Phone, Smartphone, Mail } from 'lucide-react';
 import QuoteForm from './QuoteForm';
 import CallbackRequestForm from './CallbackRequestForm';
 
@@ -35,6 +35,35 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
+      {/* Mobile Contact Banner */}
+      <div className="md:hidden bg-blue-500 py-1">
+        <div className="mx-auto max-w-7xl px-4 flex justify-center space-x-6">
+          <a 
+            href="tel:+13175550123" 
+            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            aria-label="Call us"
+          >
+            <Phone className="h-4 w-4" />
+            <span className="text-sm font-medium">Call us</span>
+          </a>
+          <a
+            href="sms:+13175550123?body=I need a pressure wash!"
+            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            aria-label="Send text message"
+          >
+            <Smartphone className="h-4 w-4" />
+            <span className="text-sm font-medium">Text us</span>
+          </a>
+          <a
+            href="mailto:service@brownsburgpressurewashing.com?subject=I need a pressure wash!"
+            className="flex items-center space-x-1 text-white hover:text-blue-100 transition-colors"
+            aria-label="Email us"
+          >
+            <Mail className="h-4 w-4" />
+            <span className="text-sm font-medium">Email us</span>
+          </a>
+        </div>
+      </div>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - serves as home link */}
@@ -111,22 +140,6 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-3">
-            <div className="flex items-center space-x-1">
-              <a 
-                href="tel:+13175550123" 
-                className="text-navy-900 hover:text-blue-500 transition-colors p-1"
-                aria-label="Call us"
-              >
-                <Phone className="h-5 w-5" />
-              </a>
-              <a
-                href="sms:+13175550123?body=I need a pressure wash!"
-                className="text-navy-900 hover:text-blue-500 transition-colors"
-                aria-label="Send text message"
-              >
-                <Smartphone className="h-5 w-5" />
-              </a>
-            </div>
             <button
               onClick={() => setIsQuoteFormOpen(true)}
               className="bg-blue-500 text-white px-3 py-1 rounded text-sm"
