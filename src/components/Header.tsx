@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Droplets, Phone, MessageSquare } from 'lucide-react';
+import { Menu, X, Phone, Smartphone } from 'lucide-react';
 import QuoteForm from './QuoteForm';
 import CallbackRequestForm from './CallbackRequestForm';
 
@@ -11,6 +11,7 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
+    { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { 
       name: 'Service Areas', 
@@ -29,7 +30,6 @@ const Header = () => {
       ]
     },
     { name: 'Blog', href: '/blog' },
-    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -39,7 +39,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo - serves as home link */}
           <Link to="/" className="flex items-center space-x-2">
-            <Droplets className="h-8 w-8 text-blue-500" />
+            <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-14 w-14 object-contain" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-navy-900">Brownsburg</span>
               <span className="text-sm text-blue-500 -mt-1">Pressure Washing</span>
@@ -93,7 +93,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Contact Options */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
             <a 
               href="tel:+13175550123" 
               className="text-navy-900 hover:text-blue-500 transition-colors flex items-center text-sm"
@@ -101,12 +101,6 @@ const Header = () => {
               <Phone className="h-4 w-4 mr-1" />
               (317) 555-0123
             </a>
-            <button
-              onClick={() => setIsCallbackFormOpen(true)}
-              className="text-blue-500 border border-blue-500 px-3 py-1 rounded hover:bg-blue-50 transition-colors text-sm font-medium"
-            >
-              Request Call Back
-            </button>
             <button
               onClick={() => setIsQuoteFormOpen(true)}
               className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
@@ -116,21 +110,23 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <a 
-              href="tel:+13175550123" 
-              className="text-navy-900 hover:text-blue-500 transition-colors p-1"
-              aria-label="Call us"
-            >
-              <Phone className="h-5 w-5" />
-            </a>
-            <button
-              onClick={() => setIsCallbackFormOpen(true)}
-              className="text-blue-500 p-1"
-              aria-label="Request call back"
-            >
-              <MessageSquare className="h-5 w-5" />
-            </button>
+          <div className="md:hidden flex items-center space-x-3">
+            <div className="flex items-center space-x-1">
+              <a 
+                href="tel:+13175550123" 
+                className="text-navy-900 hover:text-blue-500 transition-colors p-1"
+                aria-label="Call us"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
+              <a
+                href="sms:+13175550123?body=I need a pressure wash!"
+                className="text-navy-900 hover:text-blue-500 transition-colors"
+                aria-label="Send text message"
+              >
+                <Smartphone className="h-5 w-5" />
+              </a>
+            </div>
             <button
               onClick={() => setIsQuoteFormOpen(true)}
               className="bg-blue-500 text-white px-3 py-1 rounded text-sm"

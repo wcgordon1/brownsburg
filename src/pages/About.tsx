@@ -130,8 +130,8 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img
-              src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Professional pressure washing team at work"
+              src="/mason.jpeg"
+              alt="Our logo and dog - Mason"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
               loading="lazy"
             />
