@@ -46,11 +46,15 @@ const FAQSection: React.FC<FAQSectionProps> = ({
         {faqs.map((faq, index) => (
           <div 
             key={index} 
-            className="border border-gray-200 rounded-lg overflow-hidden bg-white"
+            className={`rounded-lg overflow-hidden bg-white transition-colors duration-200 ${
+              openIndex === index 
+                ? 'border-2 border-blue-500' 
+                : 'border border-gray-200'
+            }`}
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
+              className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
               aria-expanded={openIndex === index}
               aria-controls={`faq-answer-${index}`}
             >

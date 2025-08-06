@@ -32,7 +32,7 @@ const allServices: ServiceInfo[] = [
     description: 'Deep cleaning that removes oil stains, dirt, and grime from concrete surfaces.',
     icon: ArrowRight,
     link: '/services/driveway-cleaning',
-    price: 'Starting at $150'
+    price: 'Starting at $200'
   },
   {
     id: 'deck-fence-cleaning',

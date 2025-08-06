@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Droplets className="h-8 w-8 text-blue-500" />
+                <img src="/mmlo.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-14 w-14 object-contain rounded-full" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold">Brownsburg</span>
-                <span className="text-sm text-blue-400 -mt-1">Pressure Washing</span>
+                <span className="text-2xl font-bold">Brownsburg</span>
+                <span className="text-lg font-semibold text-blue-400 -mt-1">Pressure Washing</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Brownsburg Pressure Washing. All rights reserved.
+            © 2025 Brownsburg Pressure Washing. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/about" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">About</Link>

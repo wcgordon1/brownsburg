@@ -159,7 +159,7 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-            Our Professional Services
+            Brownsburg Pressure Washing Services
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We offer comprehensive pressure washing services to meet all your property maintenance needs. 

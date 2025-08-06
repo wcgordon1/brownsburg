@@ -111,7 +111,7 @@ const Blog = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-            Pressure Washing Blog
+            Brownsburg Pressure Washing Blog
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Expert tips, guides, and insights about pressure washing, property maintenance, 
