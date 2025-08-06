@@ -166,7 +166,11 @@ const DeckFenceCleaning = () => {
             "ratingValue": "5.0",
             "reviewCount": "35",
             "bestRating": "5",
-            "worstRating": "1"
+            "worstRating": "1",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Deck & Fence Cleaning"
+            }
           },
           "image": {
             "@type": "ImageObject",

@@ -168,7 +168,11 @@ const DrivewayCleaning = () => {
             "ratingValue": "5.0",
             "reviewCount": "40",
             "bestRating": "5",
-            "worstRating": "1"
+            "worstRating": "1",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Driveway Cleaning"
+            }
           },
           "image": {
             "@type": "ImageObject",

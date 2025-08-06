@@ -195,7 +195,11 @@ const CommercialCleaning = () => {
             "ratingValue": "5.0",
             "reviewCount": "30",
             "bestRating": "5",
-            "worstRating": "1"
+            "worstRating": "1",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Commercial Cleaning"
+            }
           },
           "image": {
             "@type": "ImageObject",

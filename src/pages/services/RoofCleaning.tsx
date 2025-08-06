@@ -168,7 +168,11 @@ const RoofCleaning = () => {
             "ratingValue": "5.0",
             "reviewCount": "45",
             "bestRating": "5",
-            "worstRating": "1"
+            "worstRating": "1",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Roof Cleaning"
+            }
           },
           "image": {
             "@type": "ImageObject",
