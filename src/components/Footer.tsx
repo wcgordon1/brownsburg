@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-                <img src="/mmlo.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-14 w-14 object-contain rounded-full" />
+                <img src="/mmlo.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-16 w-16 object-contain rounded-full" />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold">Brownsburg</span>
-                <span className="text-lg font-semibold text-blue-400 -mt-1">Pressure Washing</span>
+                <span className="text-3xl font-bold">Brownsburg</span>
+                <span className="text-2xl font-semibold text-blue-400 -mt-1">Pressure Washing</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

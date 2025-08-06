@@ -76,7 +76,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 {item.submenu ? (
@@ -108,7 +108,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.href}
-                    className={`px-3 py-2 text-sm font-medium transition-colors ${
+                    className={`px-3 py-2 text-base font-medium transition-colors ${
                       location.pathname === item.href
                         ? 'text-blue-500'
                         : 'text-navy-900 hover:text-blue-500'
@@ -122,10 +122,11 @@ const Header = () => {
           </div>
 
           {/* Desktop Contact Options */}
-          <div className="hidden lg:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-3">
+            {/* Phone number only on large screens */}
             <a 
               href="tel:+13173504926" 
-              className="text-navy-900 hover:text-blue-500 transition-colors flex items-center text-sm"
+              className="hidden lg:flex text-navy-900 hover:text-blue-500 transition-colors items-center text-base"
             >
               <Phone className="h-4 w-4 mr-1" />
               (317) 350-4926
@@ -134,7 +135,8 @@ const Header = () => {
               onClick={() => setIsQuoteFormOpen(true)}
               className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors font-medium"
             >
-              Get Free Quote
+              <span className="md:inline lg:hidden">Quote</span>
+              <span className="hidden lg:inline">Free Quote</span>
             </button>
           </div>
 
