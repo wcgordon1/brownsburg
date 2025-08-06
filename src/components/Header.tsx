@@ -71,7 +71,7 @@ const Header = () => {
             <img src="/mml.jpeg" alt="Brownsburg Pressure Washing Logo" className="h-14 w-14 object-contain" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-navy-900">Brownsburg</span>
-              <span className="text-sm text-blue-500 -mt-1">Pressure Washing</span>
+              <span className="text-sm font-semibold text-blue-500 -mt-1">Pressure Washing</span>
             </div>
           </Link>
 
@@ -142,7 +142,7 @@ const Header = () => {
           <div className="md:hidden flex items-center space-x-3">
             <button
               onClick={() => setIsQuoteFormOpen(true)}
-              className="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+              className="bg-blue-500 text-white px-4 py-2 rounded text-base"
             >
               Quote
             </button>
