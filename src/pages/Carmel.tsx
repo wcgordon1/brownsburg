@@ -105,6 +105,9 @@ const Carmel = () => {
         })}
       </script>
 
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/carmel" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
         <div className="text-center mb-16">

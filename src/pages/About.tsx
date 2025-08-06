@@ -122,7 +122,7 @@ const About = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your trusted local partner for professional pressure washing services throughout 
-            all four Hendricks County townships that make up Brownsburg.
+            Brownsburg and the surrounding communities.
           </p>
         </div>
 

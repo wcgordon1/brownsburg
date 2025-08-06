@@ -44,7 +44,7 @@ const Avon = () => {
           "name": "Brownsburg Pressure Washing - Avon Service",
           "description": "Premium pressure washing services in Avon, IN. Specialized cleaning for newer vinyl siding subdivisions and brick estates with low-pressure, high-foam approach.",
           "url": "https://brownsburgpressurewashing.com/avon",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",
@@ -103,6 +103,9 @@ const Avon = () => {
           }
         })}
       </script>
+
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/avon" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
