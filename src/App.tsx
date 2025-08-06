@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import BackToTopButton from './components/BackToTopButton';
+import MobileChatButton from './components/MobileChatButton';
 
 // Lazy load pages
 const Home = React.lazy(() => import('./pages/Home'));
@@ -71,6 +72,7 @@ function App() {
           </main>
           <Footer />
           <BackToTopButton />
+          <MobileChatButton />
         </div>
       </Router>
     </HelmetProvider>
