@@ -51,7 +51,7 @@ const Danville = () => {
           "name": "Brownsburg Pressure Washing - Danville Service",
           "description": "Professional pressure washing services in Danville, IN. House washing, roof cleaning, driveway cleaning, and commercial services for historic downtown and growing subdivisions.",
           "url": "https://brownsburgpressurewashing.com/danville",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",

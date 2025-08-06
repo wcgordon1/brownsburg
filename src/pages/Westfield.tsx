@@ -44,7 +44,7 @@ const Westfield = () => {
           "name": "Brownsburg Pressure Washing - Westfield Service",
           "description": "Professional pressure washing services in Westfield, IN. Specialized cleaning for fast-growing suburbs and new construction with the state's highest home-ownership rate.",
           "url": "https://brownsburgpressurewashing.com/westfield",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",

@@ -44,7 +44,7 @@ const Plainfield = () => {
           "name": "Brownsburg Pressure Washing - Plainfield Service",
           "description": "Professional pressure washing services in Plainfield, IN. Specialized cleaning for logistics facilities, family neighborhoods, and warehouse complexes off I-70.",
           "url": "https://brownsburgpressurewashing.com/plainfield",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",

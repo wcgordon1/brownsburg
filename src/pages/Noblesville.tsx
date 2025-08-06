@@ -44,7 +44,7 @@ const Noblesville = () => {
           "name": "Brownsburg Pressure Washing - Noblesville Service",
           "description": "Professional pressure washing services in Noblesville, IN. Specialized lakeside cleaning for Morse Reservoir properties, downtown brick facades, and restaurant patios.",
           "url": "https://brownsburgpressurewashing.com/noblesville",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",

@@ -150,11 +150,11 @@ const Contact = () => {
             Your quote request has been received. We'll contact you within 24 hours to discuss your project and schedule your free estimate.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="tel:+13175550123" className="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            <a href="tel:+13173504926" className="text-blue-500 hover:text-blue-600 font-medium flex items-center">
               <Phone className="h-5 w-5 mr-2" />
-              Call us at (317) 555-0123
+              Call us at (317) 350-4926
             </a>
-            <a href="sms:+13175550123?body=I%20need%20a%20pressure%20washing%20quote%20quick!" className="text-blue-500 hover:text-blue-600 font-medium flex items-center">
+            <a href="sms:+13173504926?body=I%20need%20a%20pressure%20washing%20quote%20quick!" className="text-blue-500 hover:text-blue-600 font-medium flex items-center">
               <MessageSquare className="h-5 w-5 mr-2" />
               Text us for quick service
             </a>
@@ -174,7 +174,7 @@ const Contact = () => {
           "name": "Brownsburg Pressure Washing",
           "description": "Professional pressure washing services in Brownsburg, IN. House washing, roof cleaning, driveway cleaning, and commercial services. Serving all Hendricks County townships.",
           "url": "https://brownsburgpressurewashing.com",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",
@@ -352,10 +352,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                      <a href="tel:+13175550123" className="text-gray-300 hover:text-blue-400 transition-colors">
-                        (317) 555-0123
+                      <a href="tel:+13173504926" className="text-gray-300 hover:text-blue-400 transition-colors">
+                        (317) 350-4926
                       </a>
-                      <a href="sms:+13175550123?body=I%20need%20a%20pressure%20washing%20quote%20quick!" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
+                      <a href="sms:+13173504926?body=I%20need%20a%20pressure%20washing%20quote%20quick!" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center">
                         <MessageSquare className="h-4 w-4 mr-1" />
                         <span>Text for quick quote</span>
                       </a>
@@ -483,7 +483,7 @@ const Contact = () => {
                       className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                         errors.phone ? 'border-red-500 focus:border-red-500' : 'border-gray-300 focus:border-blue-500'
                       }`}
-                      placeholder="(317) 555-0123"
+                      placeholder="(317) 350-4926"
                       aria-required="true"
                       aria-invalid={errors.phone ? "true" : "false"}
                       aria-describedby={errors.phone ? "phone-error" : undefined}
@@ -706,14 +706,14 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+13175550123" 
+                href="tel:+13173504926" 
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold inline-flex items-center justify-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (317) 555-0123
+                Call (317) 350-4926
               </a>
               <a 
-                href="sms:+13175550123?body=I%20need%20a%20pressure%20washing%20quote%20quick!" 
+                href="sms:+13173504926?body=I%20need%20a%20pressure%20washing%20quote%20quick!" 
                 className="bg-blue-500 text-white border-2 border-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold inline-flex items-center justify-center"
               >
                 <MessageSquare className="mr-2 h-5 w-5" />

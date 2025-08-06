@@ -89,7 +89,7 @@ const Home = () => {
           "name": "Brownsburg Pressure Washing",
           "description": "Professional pressure washing services in Brownsburg, IN",
           "url": "https://brownsburgpressurewashing.com",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",
@@ -183,8 +183,8 @@ const Home = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-5 w-5 text-blue-500" />
-                  <a href="tel:+13175550123" className="text-sm text-blue-500 hover:text-blue-700 transition-colors">
-                    (317) 555-0123
+                  <a href="tel:+13173504926" className="text-sm text-blue-500 hover:text-blue-700 transition-colors">
+                    (317) 350-4926
                   </a>
                 </div>
               </div>
@@ -326,11 +326,11 @@ const Home = () => {
               Get Your Free Quote Now
             </button>
             <a 
-              href="tel:+13175550123"
+              href="tel:+13173504926"
               className="bg-white text-navy-900 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold inline-flex items-center justify-center"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call Us: (317) 555-0123
+              Call Us: (317) 350-4926
             </a>
             <button
               onClick={() => setIsCallbackFormOpen(true)}

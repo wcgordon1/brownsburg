@@ -96,7 +96,7 @@ const Gallery = () => {
             "@type": "LocalBusiness",
             "name": "Brownsburg Pressure Washing",
             "url": "https://brownsburgpressurewashing.com",
-            "telephone": "(317) 555-0123",
+            "telephone": "(317) 350-4926",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Brownsburg",

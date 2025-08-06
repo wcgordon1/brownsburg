@@ -45,7 +45,7 @@ const Carmel = () => {
           "name": "Brownsburg Pressure Washing - Carmel Service",
           "description": "White-glove exterior cleaning for Carmel, IN luxury properties. Specialized soft-wash techniques and $2 million insurance for Indiana's wealth hub.",
           "url": "https://brownsburgpressurewashing.com/carmel",
-          "telephone": "(317) 555-0123",
+          "telephone": "(317) 350-4926",
           "email": "info@brownsburgpressurewashing.com",
           "address": {
             "@type": "PostalAddress",

@@ -129,14 +129,14 @@ const NotFound = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a
-              href="tel:+13175550123"
+              href="tel:+13173504926"
               className="border-2 border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-500 hover:text-white transition-colors font-semibold inline-flex items-center justify-center"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call (317) 555-0123
+              Call (317) 350-4926
             </a>
             <a
-              href="sms:+13175550123?body=I%20need%20a%20pressure%20washing%20quote%20quick!"
+              href="sms:+13173504926?body=I%20need%20a%20pressure%20washing%20quote%20quick!"
               className="border-2 border-green-500 text-green-400 px-8 py-3 rounded-lg hover:bg-green-500 hover:text-white transition-colors font-semibold inline-flex items-center justify-center"
             >
               <MessageSquare className="mr-2 h-5 w-5" />

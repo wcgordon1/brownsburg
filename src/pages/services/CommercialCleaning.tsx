@@ -166,7 +166,7 @@ const CommercialCleaning = () => {
             "@type": "LocalBusiness",
             "name": "Brownsburg Pressure Washing",
             "url": "https://brownsburgpressurewashing.com",
-            "telephone": "(317) 555-0123",
+            "telephone": "(317) 350-4926",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Brownsburg",
@@ -385,7 +385,7 @@ const CommercialCleaning = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>
             <a 
-              href="tel:+13175550123" 
+              href="tel:+13173504926" 
               className="bg-white border-2 border-blue-500 text-blue-500 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors font-semibold inline-flex items-center mx-2 mt-4 sm:mt-0"
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -581,11 +581,11 @@ const CommercialCleaning = () => {
               Get Your Commercial Quote Today
             </button>
             <a 
-              href="tel:+13175550123" 
+              href="tel:+13173504926" 
               className="bg-white border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold inline-flex items-center justify-center"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call Us: (317) 555-0123
+                              Call Us: (317) 350-4926
             </a>
             <button
               onClick={() => setIsCallbackFormOpen(true)}
