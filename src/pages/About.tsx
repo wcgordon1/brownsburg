@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, Star, Shield, Clock, Users, Award, Eye, Phone, MessageSquare } from 'lucide-react';
+import { CheckCircle, Star, Shield, Clock, Users, Award, Eye, Phone } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 
@@ -128,12 +128,14 @@ const About = () => {
 
         {/* Owner Story */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div>
+          <div className="aspect-[4/3]">
             <img
               src="/mason.jpeg"
               alt="Our logo and dog - Mason"
-              className="w-full h-96 object-cover rounded-lg shadow-lg"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
               loading="lazy"
+              width="600"
+              height="450"
             />
           </div>
           <div>
