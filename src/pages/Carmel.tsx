@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Crown } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -105,8 +106,11 @@ const Carmel = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/carmel" />
+      <Helmet>
+        <title>Carmel, IN Pressure Washing - Luxury Home Cleaning</title>
+        <meta name="description" content="Professional pressure washing services in Carmel, IN. Specialized cleaning for luxury homes, upscale neighborhoods, and premium properties." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/carmel" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

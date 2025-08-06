@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle, Shield, Droplets, Star, Zap, Eye, Phone, MessageSquare } from 'lucide-react';
 import QuoteForm from '../../components/QuoteForm';
 import CallbackRequestForm from '../../components/CallbackRequestForm';
@@ -178,8 +179,11 @@ const DrivewayCleaning = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/services/driveway-cleaning" />
+      <Helmet>
+        <title>Driveway Cleaning Brownsburg IN - Restore Like New</title>
+        <meta name="description" content="Professional driveway cleaning services in Brownsburg, IN. Remove oil stains, dirt, and grime to restore your driveway's original appearance." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/services/driveway-cleaning" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

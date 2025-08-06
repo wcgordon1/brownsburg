@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Zap } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -104,8 +105,11 @@ const Westfield = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/westfield" />
+      <Helmet>
+        <title>Westfield, IN Pressure Washing - Fast Growing Suburbs</title>
+        <meta name="description" content="Professional pressure washing services in Westfield, IN. Specialized cleaning for fast-growing suburbs and new construction with expert care." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/westfield" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

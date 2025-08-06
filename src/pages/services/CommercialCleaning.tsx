@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Building, CheckCircle, ArrowRight, Shield, Clock, Star, Users, Eye, Phone, MessageSquare } from 'lucide-react';
 import QuoteForm from '../../components/QuoteForm';
 import CallbackRequestForm from '../../components/CallbackRequestForm';
@@ -205,8 +206,11 @@ const CommercialCleaning = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/services/commercial-cleaning" />
+      <Helmet>
+        <title>Commercial Pressure Washing Brownsburg IN - Business Cleaning</title>
+        <meta name="description" content="Professional commercial pressure washing services in Brownsburg, IN. Maintain your business property with our comprehensive commercial cleaning solutions." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/services/commercial-cleaning" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

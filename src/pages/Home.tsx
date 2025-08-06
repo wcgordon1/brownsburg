@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, ArrowRight, Droplets, Shield, Clock, MessageSquare, Phone } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import QuoteForm from '../components/QuoteForm';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 
@@ -81,58 +82,59 @@ const Home = () => {
 
   return (
     <div className="bg-white">
-      {/* Enhanced Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Brownsburg Pressure Washing",
-          "description": "Professional pressure washing services in Brownsburg, IN",
-          "url": "https://brownsburgpressurewashing.com",
-          "telephone": "(317) 350-4926",
-          "email": "info@brownsburgpressurewashing.com",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Brownsburg",
-            "addressRegion": "IN",
-            "postalCode": "46112",
-            "addressCountry": "US"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "39.8434",
-            "longitude": "-86.3950"
-          },
-          "areaServed": [
-            "Lincoln Township",
-            "Brown Township", 
-            "Middle Township",
-            "Washington Township",
-            "Hendricks County"
-          ],
-          "serviceType": [
-            "House Washing",
-            "Roof Cleaning", 
-            "Driveway Cleaning",
-            "Deck Cleaning",
-            "Fence Cleaning",
-            "Commercial Pressure Washing"
-          ],
-          "openingHours": [
-            "Mo-Fr 07:00-19:00",
-            "Sa 08:00-17:00",
-            "Su emergency service only"
-          ],
-          "priceRange": "$$",
-          "sameAs": [
-            "https://brownsburgpressurewashing.com/about",
-            "https://brownsburgpressurewashing.com/contact"
-          ]
-        })}
-      </script>
-
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com" />
+      <Helmet>
+        <title>Brownsburg Pressure Washing - Professional Cleaning Services</title>
+        <meta name="description" content="Professional pressure washing services in Brownsburg, IN. House washing, roof cleaning, driveway cleaning, and commercial services. Serving all Hendricks County townships." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Brownsburg Pressure Washing",
+            "description": "Professional pressure washing services in Brownsburg, IN",
+            "url": "https://brownsburgpressurewashing.com",
+            "telephone": "(317) 350-4926",
+            "email": "info@brownsburgpressurewashing.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Brownsburg",
+              "addressRegion": "IN",
+              "postalCode": "46112",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "39.8434",
+              "longitude": "-86.3950"
+            },
+            "areaServed": [
+              "Lincoln Township",
+              "Brown Township", 
+              "Middle Township",
+              "Washington Township",
+              "Hendricks County"
+            ],
+            "serviceType": [
+              "House Washing",
+              "Roof Cleaning", 
+              "Driveway Cleaning",
+              "Deck Cleaning",
+              "Fence Cleaning",
+              "Commercial Pressure Washing"
+            ],
+            "openingHours": [
+              "Mo-Fr 07:00-19:00",
+              "Sa 08:00-17:00",
+              "Su emergency service only"
+            ],
+            "priceRange": "$$",
+            "sameAs": [
+              "https://brownsburgpressurewashing.com/about",
+              "https://brownsburgpressurewashing.com/contact"
+            ]
+          })}
+        </script>
+      </Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 lg:py-32">

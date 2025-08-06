@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Home, ArrowRight, Search, Phone, Droplets, MessageSquare } from 'lucide-react';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 
@@ -22,8 +23,11 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Canonical URL - 404 pages should point to homepage */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com" />
+      <Helmet>
+        <title>Page Not Found - Brownsburg Pressure Washing</title>
+        <meta name="description" content="The page you're looking for doesn't exist. Return to Brownsburg Pressure Washing homepage or contact us for help finding what you need." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

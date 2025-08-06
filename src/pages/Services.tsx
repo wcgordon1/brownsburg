@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { CheckCircle, ArrowRight, Home, Zap, Building, Fence, Eye, Shield, Clock, Star, Phone, MessageSquare } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 import CallbackRequestForm from '../components/CallbackRequestForm';
@@ -152,8 +153,11 @@ const Services = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/services" />
+      <Helmet>
+        <title>Brownsburg Pressure Washing Services - Professional Cleaning</title>
+        <meta name="description" content="Comprehensive pressure washing services including house washing, roof cleaning, driveway cleaning, deck & fence cleaning, and commercial cleaning in Brownsburg, IN." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/services" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

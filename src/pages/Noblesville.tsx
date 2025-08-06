@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Waves } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -104,8 +105,11 @@ const Noblesville = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/noblesville" />
+      <Helmet>
+        <title>Noblesville, IN Pressure Washing - Professional Service</title>
+        <meta name="description" content="Professional pressure washing services in Noblesville, IN. Specialized lakeside cleaning for Morse Reservoir properties, downtown brick facades, and restaurant patios." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/noblesville" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

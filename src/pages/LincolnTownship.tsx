@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -25,8 +26,11 @@ const LincolnTownship = () => {
 
   return (
     <div className="bg-white">
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/lincoln-township" />
+      <Helmet>
+        <title>Lincoln Township Pressure Washing - Professional Service</title>
+        <meta name="description" content="Professional pressure washing services in Lincoln Township, Hendricks County. Expert cleaning for residential and commercial properties throughout the township." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/lincoln-township" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

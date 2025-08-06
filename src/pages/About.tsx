@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, Shield, Clock, Users, Award, Eye, Phone } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import QuoteForm from '../components/QuoteForm';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 
@@ -69,50 +70,51 @@ const About = () => {
 
   return (
     <div className="bg-white">
-      {/* Enhanced Schema Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "AboutPage",
-          "name": "About Brownsburg Pressure Washing",
-          "description": "Learn about Brownsburg Pressure Washing, your trusted local partner for professional pressure washing services throughout all four Hendricks County townships.",
-          "url": "https://brownsburgpressurewashing.com/about",
-          "mainEntity": {
-            "@type": "LocalBusiness",
-            "name": "Brownsburg Pressure Washing",
-            "description": "Professional pressure washing services in Brownsburg, IN serving all four Hendricks County townships with comprehensive cleaning solutions.",
-            "url": "https://brownsburgpressurewashing.com",
-            "telephone": "(317) 350-4926",
-            "email": "info@brownsburgpressurewashing.com",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Brownsburg",
-              "addressRegion": "IN",
-              "postalCode": "46112",
-              "addressCountry": "US"
-            },
-            "areaServed": [
-              "Lincoln Township",
-              "Brown Township",
-              "Middle Township",
-              "Washington Township",
-              "Hendricks County"
-            ],
-            "foundingDate": "2019",
-            "numberOfEmployees": "5-10",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "500",
-              "bestRating": "5",
-              "worstRating": "1"
+      <Helmet>
+        <title>About Brownsburg Pressure Washing - Professional Local Service</title>
+        <meta name="description" content="Learn about Brownsburg Pressure Washing, your trusted local partner for professional pressure washing services throughout all four Hendricks County townships." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/about" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Brownsburg Pressure Washing",
+            "description": "Learn about Brownsburg Pressure Washing, your trusted local partner for professional pressure washing services throughout all four Hendricks County townships.",
+            "url": "https://brownsburgpressurewashing.com/about",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Brownsburg Pressure Washing",
+              "description": "Professional pressure washing services in Brownsburg, IN serving all four Hendricks County townships with comprehensive cleaning solutions.",
+              "url": "https://brownsburgpressurewashing.com",
+              "telephone": "(317) 350-4926",
+              "email": "info@brownsburgpressurewashing.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Brownsburg",
+                "addressRegion": "IN",
+                "postalCode": "46112",
+                "addressCountry": "US"
+              },
+              "areaServed": [
+                "Lincoln Township",
+                "Brown Township",
+                "Middle Township",
+                "Washington Township",
+                "Hendricks County"
+              ],
+              "foundingDate": "2019",
+              "numberOfEmployees": "5-10",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "500",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
             }
-          }
-        })}
-      </script>
-
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/about" />
+          })}
+        </script>
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

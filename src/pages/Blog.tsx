@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, User, Tag, Search, X } from 'lucide-react';
 import { blogPosts, getAllTags, getAllCategories } from '../data/blogPosts';
 import QuoteForm from '../components/QuoteForm';
@@ -104,8 +105,11 @@ const Blog = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/blog" />
+      <Helmet>
+        <title>Brownsburg Pressure Washing Blog - Tips & Expert Advice</title>
+        <meta name="description" content="Read our pressure washing blog for expert tips, maintenance advice, and industry insights from Brownsburg's premier pressure washing professionals." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/blog" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

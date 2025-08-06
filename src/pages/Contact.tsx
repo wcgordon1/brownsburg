@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, CheckCircle, Shield, Star, Users, Eye, MessageSquare } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 
 interface FormErrors {
@@ -304,8 +305,11 @@ const Contact = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/contact" />
+      <Helmet>
+        <title>Contact Brownsburg Pressure Washing - Get Your Free Quote</title>
+        <meta name="description" content="Contact Brownsburg Pressure Washing for your free estimate. Call (317) 350-4926 or fill out our contact form for professional pressure washing services." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/contact" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

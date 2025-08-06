@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, User, Tag, ArrowLeft, ArrowRight } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -90,8 +91,11 @@ const BlogPost = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={`https://brownsburgpressurewashing.com/blog/${post.slug}`} />
+      <Helmet>
+        <title>{post.title} - Brownsburg Pressure Washing Blog</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={`https://brownsburgpressurewashing.com/blog/${post.slug}`} />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Breadcrumb */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, ArrowRight, CheckCircle, Trees } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import QuoteForm from '../components/QuoteForm';
 
 const MiddleTownship = () => {
@@ -17,8 +18,11 @@ const MiddleTownship = () => {
 
   return (
     <div className="bg-white">
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/middle-township" />
+      <Helmet>
+        <title>Middle Township Pressure Washing - Central Location Service</title>
+        <meta name="description" content="Professional pressure washing services in Middle Township, Hendricks County. Central location serving residential and commercial properties." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/middle-township" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

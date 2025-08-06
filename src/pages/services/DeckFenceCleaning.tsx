@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Fence, CheckCircle, ArrowRight, Shield, Droplets, Star, TreePine, Eye, Phone, MessageSquare } from 'lucide-react';
 import QuoteForm from '../../components/QuoteForm';
 import CallbackRequestForm from '../../components/CallbackRequestForm';
@@ -176,8 +177,11 @@ const DeckFenceCleaning = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/services/deck-fence-cleaning" />
+      <Helmet>
+        <title>Deck & Fence Cleaning Brownsburg IN - Wood Restoration</title>
+        <meta name="description" content="Professional deck and fence cleaning services in Brownsburg, IN. Restore and protect your wood surfaces with our specialized cleaning techniques." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/services/deck-fence-cleaning" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Eye, X, Shield, Clock, CheckCircle } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -113,8 +114,11 @@ const Gallery = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/gallery" />
+      <Helmet>
+        <title>Brownsburg Pressure Washing Gallery - Before & After Photos</title>
+        <meta name="description" content="View our before and after gallery showcasing professional pressure washing results in Brownsburg, IN. See the amazing transformations we achieve." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/gallery" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

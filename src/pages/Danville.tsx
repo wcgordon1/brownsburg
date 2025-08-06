@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -107,8 +108,11 @@ const Danville = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/danville" />
+      <Helmet>
+        <title>Danville, IN Pressure Washing - Small Town Service</title>
+        <meta name="description" content="Professional pressure washing services in Danville, IN. Quality cleaning for residential and commercial properties in this charming small town." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/danville" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

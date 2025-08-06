@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, Users, DollarSign, Home, Building, Star, Crown, Waves, Truck, Zap, Compass } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -100,8 +101,11 @@ const ServiceAreas = () => {
 
   return (
     <div className="bg-white">
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas" />
+      <Helmet>
+        <title>Service Areas - Pressure Washing Hendricks County IN</title>
+        <meta name="description" content="Brownsburg Pressure Washing service areas throughout Hendricks County, IN. Professional cleaning services in all four townships and surrounding cities." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}

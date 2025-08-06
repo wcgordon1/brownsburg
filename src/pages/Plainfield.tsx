@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Truck } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
@@ -104,8 +105,11 @@ const Plainfield = () => {
         })}
       </script>
 
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/plainfield" />
+      <Helmet>
+        <title>Plainfield, IN Pressure Washing - Logistics Hub Cleaning</title>
+        <meta name="description" content="Professional pressure washing services in Plainfield, IN. Specialized cleaning for logistics facilities, family neighborhoods, and warehouse complexes." />
+        <link rel="canonical" href="https://brownsburgpressurewashing.com/service-areas/plainfield" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
