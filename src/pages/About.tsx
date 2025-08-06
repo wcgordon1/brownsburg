@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Star, Shield, Clock, Users, Award, Eye, Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -131,14 +131,17 @@ const About = () => {
         {/* Owner Story */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="aspect-[4/3]">
-            <img
-              src="/mason.jpeg"
-              alt="Our logo and dog - Mason"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-              loading="lazy"
-              width="600"
-              height="450"
-            />
+            <picture>
+              <source srcSet="/mason.webp" type="image/webp" />
+              <img
+                src="/mason.jpeg"
+                alt="Our logo and dog - Mason"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                width="600"
+                height="450"
+                fetchPriority="high"
+              />
+            </picture>
           </div>
           <div>
             <h2 className="text-3xl font-bold text-navy-900 mb-6">
