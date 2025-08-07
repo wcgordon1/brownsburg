@@ -114,7 +114,6 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
         padding: 30px 20px;
         text-align: center;
         font-size: 14px;
-        color: #64748b;
       }
       .company-name {
         font-size: 20px;
@@ -169,7 +168,6 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
   }
 
   const phoneNumber = '13173504926';
-  const textMessage = encodeURIComponent('I filled out your form on your website and need a call ASAP!');
 
   return `
     ${baseStyles}
@@ -180,9 +178,9 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
       
       <div class="content">
         <div class="greeting">
-          Hi ${data.name}! 👋
+          Hi, ${data.name}! 👋
         </div>
-        
+        <br>
         <div class="message">
           Thank you for your ${typeText}! We've received your information and are excited to help transform your property.
         </div>
@@ -191,7 +189,8 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
 
         ${data.service ? `
           <div class="service-info">
-            <strong>Service Requested:</strong> ${data.service}<br>
+            <strong>Service Requested:</strong> ${data.service}
+            <br>
             ${serviceText}
           </div>
         ` : `
@@ -233,6 +232,7 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
 
       <div class="footer">
         <div class="company-name">
+          <br>
           <strong>Brownsburg Pressure Washing</strong>
         </div>
         <div class="company-tagline">
