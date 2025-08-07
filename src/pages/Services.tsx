@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle, ArrowRight, Home, Zap, Building, Fence, Eye, Shield, Clock, Star, Phone, MessageSquare } from 'lucide-react';
+import { CheckCircle, ArrowRight, Home, Zap, Building, Fence, Eye, Shield, Clock, Star, Phone } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 import CallbackRequestForm from '../components/CallbackRequestForm';
 

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Crown } from 'lucide-react';
+import { ArrowRight, CheckCircle, Users, DollarSign, Home, Building, Crown } from 'lucide-react';
 import QuoteForm from '../components/QuoteForm';
 
 const Carmel = () => {

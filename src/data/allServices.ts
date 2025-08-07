@@ -1,10 +1,10 @@
-import { Home, Zap, ArrowRight, Fence, Building } from 'lucide-react';
+import { Home, Zap, ArrowRight, Fence, Building, LucideIcon } from 'lucide-react';
 
 export interface ServiceInfo {
   id: string;
   title: string;
   description: string;
-  icon: any; // Lucide icon component
+  icon: LucideIcon;
   link: string;
   price: string;
 }

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { MessageCircle, Phone, Smartphone, Mail, X } from 'lucide-react';
+import { useState } from 'react';
+import { Phone, Smartphone, Mail, X } from 'lucide-react';
 
 const MobileChatButton = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

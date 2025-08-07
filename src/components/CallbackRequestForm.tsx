@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, CheckCircle, Phone, Clock, Calendar, Droplets } from 'lucide-react';
+import { X, CheckCircle, Phone, Clock, Calendar } from 'lucide-react';
 
 interface CallbackRequestFormProps {
   isOpen: boolean;
