@@ -67,8 +67,8 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else {
-      const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-      const cleanPhone = formData.phone.replace(/[\s\-\(\)\.]/g, '');
+      const phoneRegex = /^[+]?[1-9][\d]{0,15}$/;
+      const cleanPhone = formData.phone.replace(/[\s\-().]/g, '');
       if (!phoneRegex.test(cleanPhone) || cleanPhone.length < 10) {
         newErrors.phone = 'Please enter a valid phone number';
       }
@@ -116,8 +116,27 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send quote request via API
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          type: 'quote',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          service: formData.service,
+          message: formData.message
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send quote request');
+      }
+
       setShowSuccess(true);
       setTimeout(() => {
         setShowSuccess(false);
@@ -134,6 +153,8 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
       }, 2000);
     } catch (error) {
       console.error('Error submitting form:', error);
+      // Show user-friendly error
+      alert('Sorry, there was an error sending your request. Please try calling us directly at (317) 350-4926.');
     } finally {
       setIsSubmitting(false);
     }

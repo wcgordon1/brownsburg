@@ -44,8 +44,8 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else {
-      const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-      const cleanPhone = formData.phone.replace(/[\s\-\(\)\.]/g, '');
+      const phoneRegex = /^[+]?[1-9][\d]{0,15}$/;
+      const cleanPhone = formData.phone.replace(/[\s\-().]/g, '');
       if (!phoneRegex.test(cleanPhone) || cleanPhone.length < 10) {
         newErrors.phone = 'Please enter a valid phone number';
       }
@@ -86,8 +86,24 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send callback request via API
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          type: 'callback',
+          name: formData.name,
+          phone: formData.phone,
+          preferredTime: formData.preferredTime
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send callback request');
+      }
+
       setShowSuccess(true);
       setTimeout(() => {
         setShowSuccess(false);
@@ -101,6 +117,8 @@ const CallbackRequestForm: React.FC<CallbackRequestFormProps> = ({ isOpen, onClo
       }, 2000);
     } catch (error) {
       console.error('Error submitting form:', error);
+      // Show user-friendly error
+      alert('Sorry, there was an error sending your request. Please try calling us directly at (317) 350-4926.');
     } finally {
       setIsSubmitting(false);
     }
