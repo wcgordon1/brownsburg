@@ -193,8 +193,8 @@ const Home = () => {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="https://images.pexels.com/photos/7078619/pexels-photo-7078619.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Professional pressure washing service cleaning a house"
+                src="/Brownsburg.webp"
+                alt="Brownsburg Pressure Washing - Professional pressure washing service cleaning a house"
                 className="w-full h-96 lg:h-[500px] object-cover rounded-lg shadow-2xl"
                 loading="lazy"
               />
