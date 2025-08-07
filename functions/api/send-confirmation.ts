@@ -175,7 +175,6 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
     ${baseStyles}
     <div class="container">
       <div class="header">
-        <img src="https://brownsburgpressurewashing.com/mml.jpeg" alt="Brownsburg Pressure Washing Logo" class="logo" />
         <h1>Brownsburg Pressure Washing</h1>
       </div>
       
@@ -209,15 +208,13 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
           
           <div class="button-group">
             <a href="tel:+${phoneNumber}" class="btn btn-primary">
-              📞 Call (317) 350-4926
-            </a>
-            <a href="sms:+${phoneNumber}?body=${textMessage}" class="btn btn-secondary">
-              💬 Text Us Now
+              (317) 350-4926
             </a>
           </div>
         </div>
 
         <div class="message">
+          <br>
           <strong>What happens next?</strong>
           <ul style="margin: 15px 0; padding-left: 20px;">
             <li>We'll review your request ASAP!</li>
@@ -236,7 +233,7 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
 
       <div class="footer">
         <div class="company-name">
-          Brownsburg Pressure Washing
+          <strong>Brownsburg Pressure Washing</strong>
         </div>
         <div class="company-tagline">
           Professional Pressure Washing Services
