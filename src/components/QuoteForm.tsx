@@ -116,8 +116,8 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
     setIsSubmitting(true);
 
     try {
-      // Send quote request via API
-      const response = await fetch('/api/send-email', {
+      // Send quote request to business via API
+      const businessResponse = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -133,8 +133,28 @@ const QuoteForm: React.FC<QuoteFormProps> = ({
         })
       });
 
-      if (!response.ok) {
+      if (!businessResponse.ok) {
         throw new Error('Failed to send quote request');
+      }
+
+      // Send confirmation email to customer
+      const confirmationResponse = await fetch('/api/send-confirmation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          type: 'quote',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service
+        })
+      });
+
+      if (!confirmationResponse.ok) {
+        console.warn('Failed to send confirmation email to customer');
+        // Don't throw error - business email was sent successfully
       }
 
       setShowSuccess(true);
