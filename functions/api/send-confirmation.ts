@@ -39,11 +39,13 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
         text-align: center; 
       }
       .logo {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        margin: 0 auto 15px;
+        margin: 0 auto 20px;
         display: block;
+        border: 3px solid white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       }
       .header h1 {
         margin: 0;
@@ -77,17 +79,19 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
       }
       .button-group {
         display: flex;
-        gap: 15px;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
       }
       .btn {
         display: inline-block;
-        padding: 12px 24px;
+        padding: 14px 32px;
         border-radius: 6px;
         text-decoration: none;
         font-weight: bold;
         font-size: 16px;
+        width: 200px;
+        text-align: center;
         transition: all 0.3s ease;
       }
       .btn-primary {
@@ -107,14 +111,26 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
       }
       .footer {
         background: #f8fafc;
-        padding: 20px;
+        padding: 30px 20px;
         text-align: center;
         font-size: 14px;
         color: #64748b;
       }
+      .company-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1e3a8a;
+        margin-top: 20px;
+        margin-bottom: 8px;
+      }
+      .company-tagline {
+        font-size: 14px;
+        color: #64748b;
+        margin-bottom: 20px;
+      }
       .company-info {
-        margin-top: 15px;
         font-size: 13px;
+        line-height: 1.8;
       }
       @media (max-width: 600px) {
         .button-group {
@@ -171,6 +187,8 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
         <div class="message">
           Thank you for your ${typeText}! We've received your information and are excited to help transform your property.
         </div>
+        
+        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 30px 0;" />
 
         ${data.service ? `
           <div class="service-info">
@@ -209,14 +227,18 @@ function generateConfirmationHTML(data: ConfirmationRequest): string {
           </ul>
         </div>
 
+        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 30px 0;" />
+        
         <div class="message">
           We appreciate your business and look forward to making your property shine! ✨
         </div>
       </div>
 
       <div class="footer">
-        <div>
-          <strong>Brownsburg Pressure Washing</strong><br>
+        <div class="company-name">
+          Brownsburg Pressure Washing
+        </div>
+        <div class="company-tagline">
           Professional Pressure Washing Services
         </div>
         <div class="company-info">
