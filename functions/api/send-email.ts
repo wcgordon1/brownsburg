@@ -131,7 +131,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       },
       body: JSON.stringify({
         from: 'website@brownsburgpressurewashing.com',
-        to: 'will@brownsburgpressurewashing.com',
+        to: [
+          'will@brownsburgpressurewashing.com',
+          'will.nft.works@gmail.com',
+          'wcgordon1@gmail.com',
+          'will@bestelectricianjobs.com',
+          'support@popresume.com',
+          'will@starterbuild.com'
+        ],
         subject: subject,
         html: emailHTML
       })
